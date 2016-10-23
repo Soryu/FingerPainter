@@ -13,6 +13,15 @@
 		DA8908721DBCF581001233FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8908711DBCF581001233FA /* Assets.xcassets */; };
 		DA8908751DBCF581001233FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8908731DBCF581001233FA /* LaunchScreen.storyboard */; };
 		DA8908801DBCF581001233FA /* FingerPaintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89087F1DBCF581001233FA /* FingerPaintTests.swift */; };
+		DA8908981DBCF5A0001233FA /* Painter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA89088F1DBCF59F001233FA /* Painter.framework */; };
+		DA89089F1DBCF5A0001233FA /* PainterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89089E1DBCF5A0001233FA /* PainterTests.swift */; };
+		DA8908A11DBCF5A0001233FA /* Painter.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8908911DBCF5A0001233FA /* Painter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA8908A41DBCF5A0001233FA /* Painter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA89088F1DBCF59F001233FA /* Painter.framework */; };
+		DA8908A51DBCF5A0001233FA /* Painter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA89088F1DBCF59F001233FA /* Painter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA8908AE1DBCF64D001233FA /* PanState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8908AD1DBCF64D001233FA /* PanState.swift */; };
+		DA8908B01DBCF97C001233FA /* PathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8908AF1DBCF97C001233FA /* PathGenerator.swift */; };
+		DA8908B21DBCFC44001233FA /* DrawingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8908B11DBCFC44001233FA /* DrawingState.swift */; };
+		DA8908B41DBCFE4D001233FA /* DrawingConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8908B31DBCFE4D001233FA /* DrawingConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +32,42 @@
 			remoteGlobalIDString = DA8908661DBCF581001233FA;
 			remoteInfo = FingerPaint;
 		};
+		DA8908991DBCF5A0001233FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA89085F1DBCF581001233FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA89088E1DBCF59F001233FA;
+			remoteInfo = Painter;
+		};
+		DA89089B1DBCF5A0001233FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA89085F1DBCF581001233FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA8908661DBCF581001233FA;
+			remoteInfo = FingerPaint;
+		};
+		DA8908A21DBCF5A0001233FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA89085F1DBCF581001233FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA89088E1DBCF59F001233FA;
+			remoteInfo = Painter;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DA8908A91DBCF5A0001233FA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DA8908A51DBCF5A0001233FA /* Painter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DA8908671DBCF581001233FA /* FingerPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +80,16 @@
 		DA89087B1DBCF581001233FA /* FingerPaintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FingerPaintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA89087F1DBCF581001233FA /* FingerPaintTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerPaintTests.swift; sourceTree = "<group>"; };
 		DA8908811DBCF581001233FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA89088F1DBCF59F001233FA /* Painter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Painter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8908911DBCF5A0001233FA /* Painter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Painter.h; sourceTree = "<group>"; };
+		DA8908921DBCF5A0001233FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA8908971DBCF5A0001233FA /* PainterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PainterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA89089E1DBCF5A0001233FA /* PainterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainterTests.swift; sourceTree = "<group>"; };
+		DA8908A01DBCF5A0001233FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA8908AD1DBCF64D001233FA /* PanState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanState.swift; sourceTree = "<group>"; };
+		DA8908AF1DBCF97C001233FA /* PathGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathGenerator.swift; sourceTree = "<group>"; };
+		DA8908B11DBCFC44001233FA /* DrawingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingState.swift; sourceTree = "<group>"; };
+		DA8908B31DBCFE4D001233FA /* DrawingConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA8908A41DBCF5A0001233FA /* Painter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +105,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA89088B1DBCF59F001233FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA8908941DBCF5A0001233FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8908981DBCF5A0001233FA /* Painter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +131,8 @@
 			children = (
 				DA8908691DBCF581001233FA /* FingerPaint */,
 				DA89087E1DBCF581001233FA /* FingerPaintTests */,
+				DA8908901DBCF5A0001233FA /* Painter */,
+				DA89089D1DBCF5A0001233FA /* PainterTests */,
 				DA8908681DBCF581001233FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +142,8 @@
 			children = (
 				DA8908671DBCF581001233FA /* FingerPaint.app */,
 				DA89087B1DBCF581001233FA /* FingerPaintTests.xctest */,
+				DA89088F1DBCF59F001233FA /* Painter.framework */,
+				DA8908971DBCF5A0001233FA /* PainterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +153,9 @@
 			children = (
 				DA89086A1DBCF581001233FA /* AppDelegate.swift */,
 				DA89086C1DBCF581001233FA /* ViewController.swift */,
+				DA8908AD1DBCF64D001233FA /* PanState.swift */,
+				DA8908B31DBCFE4D001233FA /* DrawingConfig.swift */,
+				DA8908B11DBCFC44001233FA /* DrawingState.swift */,
 				DA89086E1DBCF581001233FA /* Main.storyboard */,
 				DA8908711DBCF581001233FA /* Assets.xcassets */,
 				DA8908731DBCF581001233FA /* LaunchScreen.storyboard */,
@@ -96,7 +173,37 @@
 			path = FingerPaintTests;
 			sourceTree = "<group>";
 		};
+		DA8908901DBCF5A0001233FA /* Painter */ = {
+			isa = PBXGroup;
+			children = (
+				DA8908911DBCF5A0001233FA /* Painter.h */,
+				DA8908921DBCF5A0001233FA /* Info.plist */,
+				DA8908AF1DBCF97C001233FA /* PathGenerator.swift */,
+			);
+			path = Painter;
+			sourceTree = "<group>";
+		};
+		DA89089D1DBCF5A0001233FA /* PainterTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA89089E1DBCF5A0001233FA /* PainterTests.swift */,
+				DA8908A01DBCF5A0001233FA /* Info.plist */,
+			);
+			path = PainterTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DA89088C1DBCF59F001233FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8908A11DBCF5A0001233FA /* Painter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		DA8908661DBCF581001233FA /* FingerPaint */ = {
@@ -106,10 +213,12 @@
 				DA8908631DBCF581001233FA /* Sources */,
 				DA8908641DBCF581001233FA /* Frameworks */,
 				DA8908651DBCF581001233FA /* Resources */,
+				DA8908A91DBCF5A0001233FA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DA8908A31DBCF5A0001233FA /* PBXTargetDependency */,
 			);
 			name = FingerPaint;
 			productName = FingerPaint;
@@ -134,6 +243,43 @@
 			productReference = DA89087B1DBCF581001233FA /* FingerPaintTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DA89088E1DBCF59F001233FA /* Painter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA8908A61DBCF5A0001233FA /* Build configuration list for PBXNativeTarget "Painter" */;
+			buildPhases = (
+				DA89088A1DBCF59F001233FA /* Sources */,
+				DA89088B1DBCF59F001233FA /* Frameworks */,
+				DA89088C1DBCF59F001233FA /* Headers */,
+				DA89088D1DBCF59F001233FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Painter;
+			productName = Painter;
+			productReference = DA89088F1DBCF59F001233FA /* Painter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DA8908961DBCF5A0001233FA /* PainterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA8908AA1DBCF5A0001233FA /* Build configuration list for PBXNativeTarget "PainterTests" */;
+			buildPhases = (
+				DA8908931DBCF5A0001233FA /* Sources */,
+				DA8908941DBCF5A0001233FA /* Frameworks */,
+				DA8908951DBCF5A0001233FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA89089A1DBCF5A0001233FA /* PBXTargetDependency */,
+				DA89089C1DBCF5A0001233FA /* PBXTargetDependency */,
+			);
+			name = PainterTests;
+			productName = PainterTests;
+			productReference = DA8908971DBCF5A0001233FA /* PainterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,6 +296,18 @@
 						ProvisioningStyle = Automatic;
 					};
 					DA89087A1DBCF581001233FA = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = DB9QPXXS6Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DA8908661DBCF581001233FA;
+					};
+					DA89088E1DBCF59F001233FA = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = DB9QPXXS6Y;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					DA8908961DBCF5A0001233FA = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = DB9QPXXS6Y;
 						ProvisioningStyle = Automatic;
@@ -172,6 +330,8 @@
 			targets = (
 				DA8908661DBCF581001233FA /* FingerPaint */,
 				DA89087A1DBCF581001233FA /* FingerPaintTests */,
+				DA89088E1DBCF59F001233FA /* Painter */,
+				DA8908961DBCF5A0001233FA /* PainterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +354,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA89088D1DBCF59F001233FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA8908951DBCF5A0001233FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -201,7 +375,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA8908B41DBCFE4D001233FA /* DrawingConfig.swift in Sources */,
 				DA89086D1DBCF581001233FA /* ViewController.swift in Sources */,
+				DA8908AE1DBCF64D001233FA /* PanState.swift in Sources */,
+				DA8908B21DBCFC44001233FA /* DrawingState.swift in Sources */,
 				DA89086B1DBCF581001233FA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +391,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA89088A1DBCF59F001233FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8908B01DBCF97C001233FA /* PathGenerator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA8908931DBCF5A0001233FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA89089F1DBCF5A0001233FA /* PainterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -221,6 +414,21 @@
 			isa = PBXTargetDependency;
 			target = DA8908661DBCF581001233FA /* FingerPaint */;
 			targetProxy = DA89087C1DBCF581001233FA /* PBXContainerItemProxy */;
+		};
+		DA89089A1DBCF5A0001233FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA89088E1DBCF59F001233FA /* Painter */;
+			targetProxy = DA8908991DBCF5A0001233FA /* PBXContainerItemProxy */;
+		};
+		DA89089C1DBCF5A0001233FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA8908661DBCF581001233FA /* FingerPaint */;
+			targetProxy = DA89089B1DBCF5A0001233FA /* PBXContainerItemProxy */;
+		};
+		DA8908A31DBCF5A0001233FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA89088E1DBCF59F001233FA /* Painter */;
+			targetProxy = DA8908A21DBCF5A0001233FA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -338,6 +546,7 @@
 		DA8908851DBCF581001233FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DB9QPXXS6Y;
 				INFOPLIST_FILE = FingerPaint/Info.plist;
@@ -351,6 +560,7 @@
 		DA8908861DBCF581001233FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DB9QPXXS6Y;
 				INFOPLIST_FILE = FingerPaint/Info.plist;
@@ -391,6 +601,83 @@
 			};
 			name = Release;
 		};
+		DA8908A71DBCF5A0001233FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DB9QPXXS6Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Painter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.soryu2.Painter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DA8908A81DBCF5A0001233FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DB9QPXXS6Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Painter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.soryu2.Painter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DA8908AB1DBCF5A0001233FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DB9QPXXS6Y;
+				INFOPLIST_FILE = PainterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.soryu2.PainterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FingerPaint.app/FingerPaint";
+			};
+			name = Debug;
+		};
+		DA8908AC1DBCF5A0001233FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DB9QPXXS6Y;
+				INFOPLIST_FILE = PainterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.soryu2.PainterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FingerPaint.app/FingerPaint";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -416,6 +703,22 @@
 			buildConfigurations = (
 				DA8908881DBCF581001233FA /* Debug */,
 				DA8908891DBCF581001233FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DA8908A61DBCF5A0001233FA /* Build configuration list for PBXNativeTarget "Painter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA8908A71DBCF5A0001233FA /* Debug */,
+				DA8908A81DBCF5A0001233FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DA8908AA1DBCF5A0001233FA /* Build configuration list for PBXNativeTarget "PainterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA8908AB1DBCF5A0001233FA /* Debug */,
+				DA8908AC1DBCF5A0001233FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
